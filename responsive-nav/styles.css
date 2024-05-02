@@ -1,0 +1,95 @@
+*{
+    border:0px;
+    margin:0px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+    
+}
+.logo{
+    padding-left: 5px;;
+}
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-self:center;
+}
+li{
+    padding:5px;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(63, 59, 70);
+}
+button{
+    display:none;
+}
+@media screen and (max-width:450px) {
+    nav{
+        height:30px;
+    }
+    button{
+        display:flex;
+        background-color: black;
+        align-self: center;
+        height: 25px;
+        width:25px;
+        align-self: center;
+        margin:2px;
+        border: 1px solid white;
+        padding-right: 5px;
+    }
+    button:hover{
+        background-color: white;
+        border-color:black;
+    }
+    button:hover .bar{
+        background-color:black;
+    }
+    button:active{
+        background-color: rgb(8, 8, 8);
+        border-color:rgb(255, 255, 255);
+    }
+    button:active .bar{
+        background-color: rgb(255, 255, 255);
+    }
+    .block{
+        height:inherit;
+        width:inherit;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-content:center;
+    }
+    .bar{
+        height:2px;
+        width:15px;
+        background-color: rgb(255, 255, 255); 
+    }
+   .ls{
+        display:flex;
+        order:1;
+        position:absolute;
+        flex-direction: column;
+        align-content: center;
+        top:30px;
+        left:%;
+        background-color: rgb(85, 82, 82);
+        width:100vw;
+        padding:0px;
+    }
+    .hide{
+        display:none;
+    }
+    ul li{
+        align-self: center;
+    }
+}
