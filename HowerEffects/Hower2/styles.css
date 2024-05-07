@@ -32,23 +32,6 @@ nav{
     
 }
 .wrt{
-    display: none;
-}
-.blc1,.blc2{
-    width: 400px;
-    height:450px;
-    background-color: white;
-    position:absolute;
-    z-index: -1;
-    
-}
-.blc1{
-    
-}
-img{
-    width: 300px;
-}
-.blc:hover .wrt{
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -56,14 +39,37 @@ img{
     align-items: center;
     height: 375px;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.367);
+    background-color: rgba(128, 128, 128, 0.487);
     transition: 1s;
+    transform: translateY(2rem);
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+.blc1,.blc2{
+    width: 400px;
+    height:450px;
+    background-color: white;
+    position:absolute;
+    z-index: -1;
+    transition: 1s;
+    
+}
+   
+
+img{
+    width: 300px;
+}
+.blc:hover .wrt{
+    opacity: 100;
+    transform: translate(0);
+    visibility: visible;
 }
 .blc:hover+.blc1{
     transform: rotate(20deg);
-    transition: 1s;
+    
 }
 .blc:hover+.blc1+.blc2{
     transform: rotate(10deg);
-    transition: 1s;
+    
 }
