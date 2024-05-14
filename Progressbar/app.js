@@ -33,6 +33,3 @@ prev.addEventListener("click",()=>{
     }
     num--;
 })
-if(num==3){
-    next.classList.add("invis");
-}
