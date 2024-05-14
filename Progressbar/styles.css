@@ -16,7 +16,7 @@ section{
     font-size: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .ball{
     width: 45px;
