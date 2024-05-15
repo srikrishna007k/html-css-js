@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(blue,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    flex-direction: column;
+    font-weight: bolder;
+}
+section{
+    margin: 20px;
+}
+.hover{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+     border: 5px solid black;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    transition: all 0.5s;
+    transform: translateY(-200px);
+}
+.hover::after{
+    position: absolute;
+    align-self: center;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: rgb(1, 1, 1);
+    margin: 0px;
+    z-index: -1;
+    transform:translateY(20px) rotate(45deg) ;  
+}
+section:hover+ .hover{
+    opacity: 100;
+    visibility: visible;
+   transform: translateY(-150px);
+}
